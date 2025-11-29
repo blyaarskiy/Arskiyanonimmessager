@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini RP Chat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mini RP Chat</h1>
+    </header>
+
+    <div class="container">
+      <!-- Регистрация -->
+      <div id="register">
+        <input type="text" id="username" placeholder="Введите никнейм" />
+        <input
+          type="text"
+          id="phone"
+          placeholder="Номер телефона (или токен)"
+        />
+        <button id="regBtn">Зарегистрироваться</button>
+      </div>
+
+      <!-- Чат -->
+      <div id="chatroom" class="hidden">
+        <h2 id="greeting"></h2>
+        <div class="chat" id="chat"></div>
+        <input type="text" id="message" placeholder="Введите сообщение" />
+        <button id="sendBtn">Отправить</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
